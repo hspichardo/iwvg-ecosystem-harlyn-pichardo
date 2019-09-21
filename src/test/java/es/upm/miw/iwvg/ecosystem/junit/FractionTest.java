@@ -15,7 +15,16 @@ public class FractionTest {
 
 
     @Test
-    private void testDecimal(){
+    void testDecimal(){
         assertEquals(0.5,fraction.decimal());
+    }
+    @Test
+    void testGetNumerador(){
+        assertEquals(1,fraction.getNumerator());
+    }
+
+    @Test
+    void testGetDenominador(){
+        assertEquals(2,fraction.getDenominator());
     }
 }
