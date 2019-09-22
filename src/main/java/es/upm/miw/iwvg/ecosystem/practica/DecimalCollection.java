@@ -54,4 +54,15 @@ public class DecimalCollection {
         return Collections.min(this.collection);
     }
 
+    public double productorio(){
+        Iterator<Double> it = this.collection.iterator();
+        Double acum =1.0;
+        this.validateIsNullOrEmpty();
+        while (it.hasNext()){
+            acum = acum * it.next();
+        }
+        return acum;
+    }
+
+
 }
