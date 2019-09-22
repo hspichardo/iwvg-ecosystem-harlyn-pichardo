@@ -55,4 +55,9 @@ class PointTest {
         assertEquals(2, point.getY());
     }
 
+    @Test
+    void testModPoint(){
+        assertEquals("Modificacion Exitosa nuevo punto: {0 1 2}",this.point.modPoint(0,1,2));
+    }
+
 }

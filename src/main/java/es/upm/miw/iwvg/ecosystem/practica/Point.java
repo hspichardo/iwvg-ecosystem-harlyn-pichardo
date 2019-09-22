@@ -47,6 +47,13 @@ public class Point {
         return this.z;
     }
 
+    public String modPoint(int x, int y, int z){
+        this.x = x;
+        this.y = y;
+        this.z = z;
+        return "Modificacion Exitosa nuevo punto: {" + this.getX() + " " + this.getY() + " " + this.getZ() + "}";
+    }
+
     @Override
     public String toString() {
         return "Point{" +
