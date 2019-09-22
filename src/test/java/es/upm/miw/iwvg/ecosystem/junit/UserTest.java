@@ -37,4 +37,14 @@ public class UserTest {
         assertEquals("Pichardo",user.getFamilyName());
     }
 
+    @Test
+    void testShowOnlyNames(){
+        assertEquals("Harlyn Steven",user.showOnlyNames());
+    }
+
+    @Test
+    void testShowFirstNameAndFamilyName(){
+        assertEquals("Harlyn Pichardo",user.showOnlyFirstNameAndLastName());
+    }
+
 }
